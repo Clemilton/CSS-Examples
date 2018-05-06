@@ -1,0 +1,39 @@
+.container{
+	background-image: url(../img/imgHD.jpg);
+	background-position: center;
+	background-size: cover;
+	margin: 100px auto;
+	width: 600px;
+
+}
+
+.text{
+	color: white;
+	background-color: darkblue;
+	font-size:96px;
+	line-height: 200px;
+	font-weight: bolder;
+	text-align: center;
+	/*Mixa o fundo do texto , com o fundo do container
+	mix-blend-mode: multiply;
+
+	*/
+	mix-blend-mode: multiply;
+
+}
+
+.text-mask{
+
+	font-size: 96px;
+	font-weight: bolder;
+	text-align: center;
+	width: 600px;
+	margin:auto;
+	background-image:url(../img/imgHD.jpg);
+	background-position: center;
+	background-size: cover;
+	color: transparent;
+
+	background-clip: text;
+	-webkit-background-clip:text;
+}
