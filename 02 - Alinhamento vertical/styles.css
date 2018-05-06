@@ -1,0 +1,26 @@
+body{
+	margin: 0px;
+	padding: 0px;	
+}
+
+img{
+
+	width: 50%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.header{
+
+	display: flex;
+}
+
+.text{
+	width: 50%;
+	height: 100vh;
+	text-align: center;
+	/*Propriedade flexbox. Centraliza o conteudo */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

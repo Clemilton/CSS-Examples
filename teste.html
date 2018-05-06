@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElementByID example</title>
+</head>
+	<body>
+
+		<p id="para1">Some text here</p>
+		<button onclick="changeColor('blue')">blue</button>
+		<button onclick="changeColor('red')">red</button>
+
+		<div id="div1">O texto abaixo foi criado dinamicamente</div>
+
+		<div class="js">react</div>
+		<div class="js">angular</div>
+		<div class="js">typescript</div>
+		<div class="js">es6</div>
+
+		<script type="text/javascript">
+			function changeColor(newColor){
+				var elem = document.getElementById("para1");
+				elem.style.color=newColor;
+			}
+
+			document.body.onload = adcElemento;
+
+			function adcElemento(){
+				//Cria um novo elemento div
+				//e dá ele conteúndo
+				var divNova = document.createElement("div");
+				var conteudoNovo = document.createTextNode("Olá, cumprimentos");
+				divNova.appendChild(conteudoNovo); //Adiciona o texto a div
+				
+				var divAtual = document.getElementById("div1");
+				document.body.insertBefore(divNova,divAtual);
+
+			}
+
+			var js = document.getElementsByClassName('js')
+
+			for(let i=0;i<js.length;i++){
+
+				let texto= js[i].innerHTML;
+				js[i].innerHTML = 'Curso '+ texto+" js";
+			}
+
+			window.onload = function(){
+				console.log('pagina caregada com sucesso');
+			}
+
+		</script>
+	</body>
+</html>

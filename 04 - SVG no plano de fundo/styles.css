@@ -1,0 +1,39 @@
+body{
+
+	margin: 0px;
+	padding: 0px;
+	background: #006699;
+	color: white;
+}
+
+p{
+	text-align: center;
+}
+
+.container:before{
+	content: "";
+	width: 400px;
+	height: 300px;
+	margin: 100px auto;
+
+	background-image: url(lightbulb.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/*Alterando a cor do svg*/
+	filter: brightness(0.5) sepia(1) saturate(2) hue-rotate(180deg);
+	width: 400px;
+	height: 300px;
+	top:0px;
+	left: 0px;
+	position: absolute;	
+	z-index: -1;
+
+}
+.container{
+	width: 400px;
+	height: 300px;
+	margin: 100px auto;
+	position: relative;
+}
